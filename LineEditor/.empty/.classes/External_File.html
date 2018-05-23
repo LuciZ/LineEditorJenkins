@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: External_File</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: External_File (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">External_File</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (8/ 10)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (24/ 40)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;import java.io.*;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;public class External_File
+<i>4</i>&nbsp;/*****************************************************************************
+<i>5</i>&nbsp;* PROGRAMMER: Van Howbert, ORGANIZATION: CSU,  CLASS: CS-200,  DATE: Fall 99 *
+<i>6</i>&nbsp;******************************************************************************
+<i>7</i>&nbsp;* DESCRIPTION:                                                               *
+<i>8</i>&nbsp;*     This class provides an interface for external file usage.  Given the   *
+<i>9</i>&nbsp;* String name of a file, this class opens the file and connects it to the    *
+<i>10</i>&nbsp;* program.  The user can then either read the file (if opened for reading)   *
+<i>11</i>&nbsp;* or write to the file (if opened for writing). (Cannot do both at same time)*
+<i>12</i>&nbsp;*                                                                            *
+<i>13</i>&nbsp;*   Constructor()      - Constructs but does nothing.  Must then call opens. *
+<i>14</i>&nbsp;*   Constructor(FN)    - Opens for READING on String file name.              *
+<i>15</i>&nbsp;*   Constructor(FN,RW) - Open file name for READING (&#39;R&#39;) or WRITING (&#39;W&#39;)   *
+<i>16</i>&nbsp;*   openR(FN)          - Open file for READING.  Returns T/F on open success *
+<i>17</i>&nbsp;*   openW(FN)          - Open file for WRITING.  Returns T/F on open success *
+<i>18</i>&nbsp;*   getLine()          - Returns next String line on file (READ only).       *
+<i>19</i>&nbsp;*   havehitEOF()       - Returns true if at EOF, false otherwise (READ only).*
+<i>20</i>&nbsp;*   write(STR)         - Writes String to file (WRITING ONLY).               *
+<i>21</i>&nbsp;*   writeln(STR)       - Writes String to file w/newline (WRITING ONLY).     *
+<i>22</i>&nbsp;*   close()            - Closes/disconnects the file from the program.       *
+<i>23</i>&nbsp;******************************************************************************
+<i>24</i>&nbsp;* NOTES:                                                                     *
+<i>25</i>&nbsp;*     1) The getLine method returns the next line of the file without the    *
+<i>26</i>&nbsp;*        end of line marker(s) whatever they may be on a particular system.  *
+<i>27</i>&nbsp;*     2) The functions in this class are file system independent (other than *
+<i>28</i>&nbsp;*        legal file names).                                                  *
+<i>29</i>&nbsp;******************************************************************************
+<i>30</i>&nbsp;* OTHER CLASSES USED:                                                        *
+<i>31</i>&nbsp;*     java.io: FileInputStream,  InputStreamReader,  BufferedReader,         *
+<i>32</i>&nbsp;*              FileOutputStream, OutputStreamWriter, BufferedWriter.         *
+<i>33</i>&nbsp;*****************************************************************************/
+<i>34</i>&nbsp;{
+<b class="fc"><i>35</i>&nbsp;    private final boolean OPEN_ERROR = true;</b>
+<i>36</i>&nbsp;    private Object Ext_File;
+<i>37</i>&nbsp;    boolean reading;
+<i>38</i>&nbsp; 
+<i>39</i>&nbsp;    //******************************************************  CONSTRUCTORS
+<i>40</i>&nbsp;    public External_File()
+<b class="fc"><i>41</i>&nbsp;    {</b>
+<b class="fc"><i>42</i>&nbsp;       Ext_File = null;</b>
+<b class="fc"><i>43</i>&nbsp;    }</b>
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;    public External_File(String ext_file) throws IOException
+<b class="nc"><i>46</i>&nbsp;    {</b>
+<b class="nc"><i>47</i>&nbsp;       openR(ext_file);</b>
+<b class="nc"><i>48</i>&nbsp;    } </b>
+<i>49</i>&nbsp;
+<i>50</i>&nbsp;    public External_File(String ext_file, char readwrite) throws IOException
+<b class="nc"><i>51</i>&nbsp;    {</b>
+<b class="nc"><i>52</i>&nbsp;       if(readwrite == &#39;R&#39;)</b>
+<b class="nc"><i>53</i>&nbsp;          openR(ext_file);</b>
+<b class="nc"><i>54</i>&nbsp;       else if(readwrite == &#39;W&#39;)</b>
+<b class="nc"><i>55</i>&nbsp;          openW(ext_file);</b>
+<i>56</i>&nbsp;       else
+<b class="nc"><i>57</i>&nbsp;          Ext_File = null;</b>
+<b class="nc"><i>58</i>&nbsp;    } </b>
+<i>59</i>&nbsp;
+<i>60</i>&nbsp;    //******************************************************   OPEN FOR READING
+<i>61</i>&nbsp;    public boolean openR(String ext_file) throws IOException
+<i>62</i>&nbsp;    {
+<b class="fc"><i>63</i>&nbsp;       reading  = true;                               </b>
+<i>64</i>&nbsp;
+<i>65</i>&nbsp;       try
+<i>66</i>&nbsp;       {
+<b class="fc"><i>67</i>&nbsp;           Ext_File = new BufferedReader(</b>
+<i>68</i>&nbsp;                      new InputStreamReader(new FileInputStream(ext_file)));
+<i>69</i>&nbsp;       } 
+<b class="nc"><i>70</i>&nbsp;       catch (FileNotFoundException exception)</b>
+<i>71</i>&nbsp;       {
+<b class="nc"><i>72</i>&nbsp;           Ext_File = null;</b>
+<b class="nc"><i>73</i>&nbsp;           return OPEN_ERROR;</b>
+<b class="fc"><i>74</i>&nbsp;       }</b>
+<i>75</i>&nbsp;
+<b class="fc"><i>76</i>&nbsp;       return !OPEN_ERROR;</b>
+<i>77</i>&nbsp;    }
+<i>78</i>&nbsp;
+<i>79</i>&nbsp;    //******************************************************   OPEN FOR READING
+<i>80</i>&nbsp;    public boolean openW(String ext_file) throws IOException
+<i>81</i>&nbsp;    {
+<b class="fc"><i>82</i>&nbsp;       reading  = false;                              // OPEN FOR WRITING</b>
+<i>83</i>&nbsp;
+<i>84</i>&nbsp;       try
+<i>85</i>&nbsp;       {
+<b class="fc"><i>86</i>&nbsp;           Ext_File = new BufferedWriter(</b>
+<i>87</i>&nbsp;                      new OutputStreamWriter(new FileOutputStream(ext_file)));
+<i>88</i>&nbsp;       } 
+<b class="nc"><i>89</i>&nbsp;       catch (FileNotFoundException exception)</b>
+<i>90</i>&nbsp;       {
+<b class="nc"><i>91</i>&nbsp;           Ext_File = null;</b>
+<b class="nc"><i>92</i>&nbsp;           return OPEN_ERROR;</b>
+<b class="fc"><i>93</i>&nbsp;       }</b>
+<i>94</i>&nbsp;
+<b class="fc"><i>95</i>&nbsp;       return !OPEN_ERROR;</b>
+<i>96</i>&nbsp;    }
+<i>97</i>&nbsp;
+<i>98</i>&nbsp;    //******************************************************  FOR READING ONLY
+<i>99</i>&nbsp;    public String getLine() throws IOException
+<i>100</i>&nbsp;    {
+<b class="fc"><i>101</i>&nbsp;       return ((BufferedReader) Ext_File).readLine();</b>
+<i>102</i>&nbsp;    } 
+<i>103</i>&nbsp;
+<i>104</i>&nbsp;    //******************************************************  FOR READING ONLY
+<i>105</i>&nbsp;    public boolean havehitEOF() throws IOException
+<i>106</i>&nbsp;    {
+<b class="fc"><i>107</i>&nbsp;       return !((BufferedReader) Ext_File).ready();</b>
+<i>108</i>&nbsp;    } 
+<i>109</i>&nbsp;
+<i>110</i>&nbsp;    //******************************************************  FOR WRITING ONLY
+<i>111</i>&nbsp;    public void write(String str) throws IOException
+<i>112</i>&nbsp;    {
+<b class="fc"><i>113</i>&nbsp;       ((BufferedWriter) Ext_File).write(str,0,str.length());</b>
+<b class="fc"><i>114</i>&nbsp;    } </b>
+<i>115</i>&nbsp;
+<i>116</i>&nbsp;    //******************************************************  FOR WRITING ONLY
+<i>117</i>&nbsp;    public void writeln(String str) throws IOException
+<i>118</i>&nbsp;    {
+<b class="fc"><i>119</i>&nbsp;       write(str);</b>
+<b class="fc"><i>120</i>&nbsp;       ((BufferedWriter) Ext_File).newLine();</b>
+<b class="fc"><i>121</i>&nbsp;    } </b>
+<i>122</i>&nbsp;
+<i>123</i>&nbsp;    //******************************************************  FOR EITHER 
+<i>124</i>&nbsp;    public void close() throws IOException
+<i>125</i>&nbsp;    {
+<b class="fc"><i>126</i>&nbsp;       if(Ext_File != null)</b>
+<i>127</i>&nbsp;       {
+<b class="fc"><i>128</i>&nbsp;          if(reading)</b>
+<b class="fc"><i>129</i>&nbsp;             ((BufferedReader) Ext_File).close();</b>
+<i>130</i>&nbsp;          else
+<b class="fc"><i>131</i>&nbsp;             ((BufferedWriter) Ext_File).close();</b>
+<i>132</i>&nbsp;       }
+<b class="fc"><i>133</i>&nbsp;    } </b>
+<i>134</i>&nbsp;
+<i>135</i>&nbsp;} // EndClass External_File
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-05-07 17:27</div>
+</div>
+</body>
+</html>

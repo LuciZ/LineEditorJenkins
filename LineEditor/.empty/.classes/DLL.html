@@ -1,0 +1,317 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: DLL</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: DLL (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">DLL</td>
+<td class="coverageStat">
+  <span class="percent">
+    54.5%
+  </span>
+  <span class="absValue">
+    (6/ 11)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    38.6%
+  </span>
+  <span class="absValue">
+    (32/ 83)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">DLL$DLLelement</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (6/ 12)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    62.5%
+  </span>
+  <span class="absValue">
+    (10/ 16)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    52.2%
+  </span>
+  <span class="absValue">
+    (12/ 23)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    42.4%
+  </span>
+  <span class="absValue">
+    (42/ 99)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;public class DLL
+<i>2</i>&nbsp;{
+<i>3</i>&nbsp;    // Implements a DLL with dummy nodes and optimized traverse
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;    // INNER CLASS FOR SPECIFICATION OF DLL ELEMENT CLASS ======================
+<i>6</i>&nbsp;
+<i>7</i>&nbsp;    private class DLLelement
+<i>8</i>&nbsp;    {
+<i>9</i>&nbsp;        private DLLelement next;
+<i>10</i>&nbsp;        private Object     data;
+<i>11</i>&nbsp;        private DLLelement prev;
+<i>12</i>&nbsp;
+<i>13</i>&nbsp;        // Various constructors (all possible combinations for flexibility)
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;        DLLelement(DLLelement nxt, Object dat, DLLelement prv)
+<b class="fc"><i>16</i>&nbsp;        {</b>
+<b class="fc"><i>17</i>&nbsp;           next = nxt;</b>
+<b class="fc"><i>18</i>&nbsp;           data = dat;</b>
+<b class="fc"><i>19</i>&nbsp;           prev = prv;</b>
+<b class="fc"><i>20</i>&nbsp;        }</b>
+<b class="nc"><i>21</i>&nbsp;        DLLelement()                                { this(null, null, null); }</b>
+<b class="nc"><i>22</i>&nbsp;        DLLelement(Object dat)                      { this(null, dat,  null); }</b>
+<b class="nc"><i>23</i>&nbsp;        DLLelement(DLLelement nxt, Object dat)      { this(nxt,  dat,  null); }</b>
+<b class="nc"><i>24</i>&nbsp;        DLLelement(Object dat, DLLelement prv)      { this(null, dat,  prv ); }</b>
+<b class="nc"><i>25</i>&nbsp;        DLLelement(DLLelement nxt, DLLelement prv)  { this(nxt,  null, prv ); }</b>
+<i>26</i>&nbsp;    
+<i>27</i>&nbsp;        // Public access methods to the three variables
+<i>28</i>&nbsp;
+<b class="fc"><i>29</i>&nbsp;        public void       setNext (DLLelement nxt)  { next = nxt;  }</b>
+<b class="nc"><i>30</i>&nbsp;        public void       setData (Object     dat)  { data = dat;  }</b>
+<b class="fc"><i>31</i>&nbsp;        public void       setPrev (DLLelement prv)  { prev = prv;  }</b>
+<i>32</i>&nbsp;
+<b class="fc"><i>33</i>&nbsp;        public DLLelement getNext ()                { return next; }</b>
+<b class="fc"><i>34</i>&nbsp;        public Object     getData ()                { return data; }</b>
+<b class="fc"><i>35</i>&nbsp;        public DLLelement getPrev ()                { return prev; }</b>
+<i>36</i>&nbsp;    
+<i>37</i>&nbsp;    } //EndClass DLLelement
+<i>38</i>&nbsp;   
+<i>39</i>&nbsp;    // VARIABLE DECLARATIONS ====================================================
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;    private DLLelement headptr,   tailptr,   currptr;
+<i>42</i>&nbsp;    private int        Num_Nodes, Curr_Node;
+<i>43</i>&nbsp;
+<i>44</i>&nbsp;    // CONSTRUCTOR ==============================================================
+<i>45</i>&nbsp;
+<i>46</i>&nbsp;    DLL()
+<b class="fc"><i>47</i>&nbsp;    { </b>
+<b class="fc"><i>48</i>&nbsp;        setReset();</b>
+<b class="fc"><i>49</i>&nbsp;    }</b>
+<i>50</i>&nbsp;
+<i>51</i>&nbsp;    private void setReset()
+<i>52</i>&nbsp;    { 
+<b class="fc"><i>53</i>&nbsp;        headptr = new DLLelement(null,null,null);</b>
+<b class="fc"><i>54</i>&nbsp;        tailptr = new DLLelement(null,null,null);</b>
+<i>55</i>&nbsp;
+<b class="fc"><i>56</i>&nbsp;        headptr.setNext(tailptr);</b>
+<b class="fc"><i>57</i>&nbsp;        tailptr.setPrev(headptr);</b>
+<i>58</i>&nbsp;
+<b class="fc"><i>59</i>&nbsp;        currptr=headptr;</b>
+<b class="fc"><i>60</i>&nbsp;        Num_Nodes=Curr_Node=0;</b>
+<b class="fc"><i>61</i>&nbsp;    }</b>
+<i>62</i>&nbsp;
+<i>63</i>&nbsp;    // PUBLIC SERVICE FUNCTIONS =================================================
+<i>64</i>&nbsp;
+<i>65</i>&nbsp;
+<i>66</i>&nbsp;    public void clearDLL()
+<i>67</i>&nbsp;    { 
+<b class="nc"><i>68</i>&nbsp;        setReset();</b>
+<b class="nc"><i>69</i>&nbsp;    }</b>
+<i>70</i>&nbsp;
+<i>71</i>&nbsp;
+<i>72</i>&nbsp;    public int numberDLL()
+<i>73</i>&nbsp;    {
+<b class="fc"><i>74</i>&nbsp;        return Num_Nodes;</b>
+<i>75</i>&nbsp;    }
+<i>76</i>&nbsp;
+<i>77</i>&nbsp;
+<i>78</i>&nbsp;    public boolean emptyDLL()
+<i>79</i>&nbsp;    {
+<b class="nc"><i>80</i>&nbsp;        return Num_Nodes == 0;</b>
+<i>81</i>&nbsp;    }
+<i>82</i>&nbsp;
+<i>83</i>&nbsp;
+<i>84</i>&nbsp;    public Object getDLL(int elnum)
+<i>85</i>&nbsp;    { 
+<b class="fc"><i>86</i>&nbsp;        findEL(elnum);</b>
+<b class="fc"><i>87</i>&nbsp;        return (currptr.getData());</b>
+<i>88</i>&nbsp;    }
+<i>89</i>&nbsp;
+<i>90</i>&nbsp;
+<i>91</i>&nbsp;    public void putDLL(int elnum, Object data)
+<i>92</i>&nbsp;    { 
+<b class="nc"><i>93</i>&nbsp;        findEL(elnum);</b>
+<b class="nc"><i>94</i>&nbsp;        currptr.setData(data);</b>
+<b class="nc"><i>95</i>&nbsp;    }</b>
+<i>96</i>&nbsp;
+<i>97</i>&nbsp;
+<i>98</i>&nbsp;    public void insertDLL(int elnum, Object data)
+<i>99</i>&nbsp;    { 
+<i>100</i>&nbsp;        // Inserts after elnum element number (0 allowed for insert before first)
+<b class="fc"><i>101</i>&nbsp;        findEL(elnum);</b>
+<i>102</i>&nbsp;       
+<i>103</i>&nbsp;        // Create new element with user data and pointers to surrounding nodes
+<b class="fc"><i>104</i>&nbsp;        DLLelement ptr = new DLLelement(currptr.getNext(), </b>
+<i>105</i>&nbsp;                                        data, 
+<b class="fc"><i>106</i>&nbsp;                                       (currptr.getNext()).getPrev());</b>
+<i>107</i>&nbsp;   
+<i>108</i>&nbsp;        // Reset pointers in surrounding nodes to new node
+<b class="fc"><i>109</i>&nbsp;        (currptr.getNext()).setPrev(ptr);</b>
+<b class="fc"><i>110</i>&nbsp;        currptr.setNext(ptr);</b>
+<i>111</i>&nbsp;
+<b class="fc"><i>112</i>&nbsp;        currptr=ptr;</b>
+<b class="fc"><i>113</i>&nbsp;        Num_Nodes++;</b>
+<b class="fc"><i>114</i>&nbsp;        Curr_Node++;</b>
+<b class="fc"><i>115</i>&nbsp;    }</b>
+<i>116</i>&nbsp;
+<i>117</i>&nbsp;
+<i>118</i>&nbsp;    public void deleteDLL(int elnum)
+<i>119</i>&nbsp;    { 
+<b class="nc"><i>120</i>&nbsp;        findEL(elnum);</b>
+<i>121</i>&nbsp;
+<b class="nc"><i>122</i>&nbsp;        (currptr.getPrev()).setNext(currptr.getNext());</b>
+<b class="nc"><i>123</i>&nbsp;        (currptr.getNext()).setPrev(currptr.getPrev());</b>
+<i>124</i>&nbsp;
+<b class="nc"><i>125</i>&nbsp;        currptr=currptr.getPrev();</b>
+<b class="nc"><i>126</i>&nbsp;        Num_Nodes--;</b>
+<b class="nc"><i>127</i>&nbsp;        Curr_Node--;</b>
+<b class="nc"><i>128</i>&nbsp;    }</b>
+<i>129</i>&nbsp;
+<i>130</i>&nbsp;
+<i>131</i>&nbsp;    // PRIVATE SUPPORT FUNCTIONS ================================================
+<i>132</i>&nbsp;
+<i>133</i>&nbsp;    private void findEL(int elnum)
+<i>134</i>&nbsp;    { 
+<i>135</i>&nbsp;    
+<i>136</i>&nbsp;        // NOTE:  This is a &quot;weasely&quot; version of the traverse since I was too
+<i>137</i>&nbsp;        //        lazy to traverse up/down from currnode (so I just did up/down
+<i>138</i>&nbsp;        //        from tailptr/headptr)!!  
+<i>139</i>&nbsp;
+<i>140</i>&nbsp;        // Note: if elnum == Curr_Node then will just skip everything!!
+<i>141</i>&nbsp;
+<b class="fc"><i>142</i>&nbsp;        if(elnum == Curr_Node)                     // node current case</b>
+<b class="fc"><i>143</i>&nbsp;           return;</b>
+<b class="fc"><i>144</i>&nbsp;        else if(elnum == 0) {                      // node #0 zero case</b>
+<b class="nc"><i>145</i>&nbsp;           currptr=headptr;</b>
+<b class="nc"><i>146</i>&nbsp;           Curr_Node=0;</b>
+<i>147</i>&nbsp;        }
+<b class="fc"><i>148</i>&nbsp;        else if(elnum == Curr_Node-1) {            // prev node case</b>
+<b class="fc"><i>149</i>&nbsp;           currptr=currptr.getPrev();</b>
+<b class="fc"><i>150</i>&nbsp;           Curr_Node--;</b>
+<i>151</i>&nbsp;        }
+<b class="fc"><i>152</i>&nbsp;        else if(elnum == Curr_Node+1) {            // next node case</b>
+<b class="fc"><i>153</i>&nbsp;           currptr=currptr.getNext();</b>
+<b class="fc"><i>154</i>&nbsp;           Curr_Node++;</b>
+<i>155</i>&nbsp;        }
+<b class="nc"><i>156</i>&nbsp;        else if(elnum &gt;= (Num_Nodes-elnum+1)) {    // search from top case</b>
+<b class="nc"><i>157</i>&nbsp;           currptr=headptr;</b>
+<b class="nc"><i>158</i>&nbsp;           for(int i=1; i&lt;=elnum; i++)</b>
+<b class="nc"><i>159</i>&nbsp;	       currptr=currptr.getNext();</b>
+<b class="nc"><i>160</i>&nbsp;           Curr_Node=elnum;</b>
+<i>161</i>&nbsp;        }
+<b class="nc"><i>162</i>&nbsp;        else if(elnum &lt; (Num_Nodes-elnum+1)) {     // search from bottom case</b>
+<b class="nc"><i>163</i>&nbsp;           currptr=tailptr;</b>
+<b class="nc"><i>164</i>&nbsp;           for(int i=Num_Nodes; i&gt;=elnum; i--)</b>
+<b class="nc"><i>165</i>&nbsp;	       currptr=currptr.getPrev();</b>
+<b class="nc"><i>166</i>&nbsp;           Curr_Node=elnum;</b>
+<i>167</i>&nbsp;        }
+<i>168</i>&nbsp;        else {
+<b class="nc"><i>169</i>&nbsp;           System.out.println(&quot;Internal Error In Find_El_DLL method!!!&quot;);</b>
+<i>170</i>&nbsp;        }
+<b class="fc"><i>171</i>&nbsp;    }</b>
+<i>172</i>&nbsp;
+<i>173</i>&nbsp;    public void Debug(int flag)
+<i>174</i>&nbsp;    { 
+<b class="nc"><i>175</i>&nbsp;        System.out.println(&quot;=============================================&quot;);</b>
+<b class="nc"><i>176</i>&nbsp;        System.out.println(&quot;DLL DEBUG:&quot;);</b>
+<b class="nc"><i>177</i>&nbsp;        System.out.println(&quot;headptr   == &quot;  +  headptr  );</b>
+<b class="nc"><i>178</i>&nbsp;        System.out.println(&quot;currptr   == &quot;  +  currptr  );</b>
+<b class="nc"><i>179</i>&nbsp;        System.out.println(&quot;tailptr   == &quot;  +  tailptr  );</b>
+<b class="nc"><i>180</i>&nbsp;        System.out.println(&quot;Num_Nodes == &quot;  +  Num_Nodes);</b>
+<b class="nc"><i>181</i>&nbsp;        System.out.println(&quot;Curr_Node == &quot;  +  Num_Nodes);</b>
+<b class="nc"><i>182</i>&nbsp;        System.out.println();</b>
+<i>183</i>&nbsp;
+<i>184</i>&nbsp;        // Flag: &lt;0 entire list, =0 current node, &gt;0 node number
+<i>185</i>&nbsp;
+<b class="nc"><i>186</i>&nbsp;        if(flag &lt; 0) {</b>
+<b class="nc"><i>187</i>&nbsp;           DLLelement holdptr = headptr;</b>
+<b class="nc"><i>188</i>&nbsp;           for(int i=0; i&lt;=(Num_Nodes+1); i++) {</b>
+<b class="nc"><i>189</i>&nbsp;	       System.out.println(i + &quot;  &quot; + holdptr.getNext() </b>
+<b class="nc"><i>190</i>&nbsp;                                    + &quot;  &quot; + holdptr.getPrev());</b>
+<b class="nc"><i>191</i>&nbsp;           holdptr=holdptr.getNext();</b>
+<i>192</i>&nbsp;           }
+<b class="nc"><i>193</i>&nbsp;        }</b>
+<b class="nc"><i>194</i>&nbsp;        else if(flag == 0) {</b>
+<b class="nc"><i>195</i>&nbsp;           System.out.println(currptr           </b>
+<b class="nc"><i>196</i>&nbsp;                              + &quot;  &quot; + currptr.getNext()</b>
+<b class="nc"><i>197</i>&nbsp;                              + &quot;  &quot; + currptr.getPrev());</b>
+<i>198</i>&nbsp;        }
+<i>199</i>&nbsp;        else {
+<b class="nc"><i>200</i>&nbsp;           findEL(flag);</b>
+<b class="nc"><i>201</i>&nbsp;    	   System.out.println(currptr           </b>
+<b class="nc"><i>202</i>&nbsp;                              + &quot;  &quot; + currptr.getNext()</b>
+<b class="nc"><i>203</i>&nbsp;                              + &quot;  &quot; + currptr.getPrev());</b>
+<i>204</i>&nbsp;        }
+<b class="nc"><i>205</i>&nbsp;        System.out.println(&quot;=============================================&quot;);</b>
+<b class="nc"><i>206</i>&nbsp;}</b>
+<i>207</i>&nbsp;
+<i>208</i>&nbsp;} // EndCLass DLL
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-05-07 17:27</div>
+</div>
+</body>
+</html>

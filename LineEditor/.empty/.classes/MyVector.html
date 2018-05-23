@@ -1,0 +1,274 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: MyVector</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: MyVector (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MyVector</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 61)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;public class MyVector
+<i>2</i>&nbsp;{
+<i>3</i>&nbsp;    protected final static int  DEFCAPACITY  = 100; // Default init, size&gt;0
+<i>4</i>&nbsp;    protected final static int  DEFEXTENSION =  20; // Default ext,  size&gt;0
+<i>5</i>&nbsp;    protected final static char DEFEXTMETHOD = &#39;F&#39;; // Default ext. method
+<i>6</i>&nbsp;
+<i>7</i>&nbsp;    protected Object elementData[];   // The data array of objects
+<i>8</i>&nbsp;    protected int    elementCount;    // Number of current elements stored
+<i>9</i>&nbsp;    protected int    capacityOrig;    // Initial size (original)
+<i>10</i>&nbsp;    protected int    extensionOrig;   // Extension size (original)
+<i>11</i>&nbsp;    protected int    currExtInc;      // Current Extension size
+<i>12</i>&nbsp;    protected char   extensionMeth;   // Extension method
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;    //************************** CONSTRUCTORS ***************************
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;    public MyVector()
+<b class="nc"><i>17</i>&nbsp;    {</b>
+<b class="nc"><i>18</i>&nbsp;        constructVector(DEFCAPACITY,DEFEXTENSION,DEFEXTMETHOD); </b>
+<i>19</i>&nbsp;    }
+<i>20</i>&nbsp;    
+<i>21</i>&nbsp;    public MyVector(int initialCapacity)
+<b class="nc"><i>22</i>&nbsp;    {</b>
+<b class="nc"><i>23</i>&nbsp;        constructVector(initialCapacity,DEFEXTENSION,DEFEXTMETHOD); </b>
+<i>24</i>&nbsp;    }
+<i>25</i>&nbsp;
+<i>26</i>&nbsp;    public MyVector(int initialCapacity, int capacityIncr)
+<b class="nc"><i>27</i>&nbsp;    {</b>
+<b class="nc"><i>28</i>&nbsp;        constructVector(initialCapacity,capacityIncr,DEFEXTMETHOD); </b>
+<i>29</i>&nbsp;    }
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;    public MyVector(int initialCapacity, char extMethod)
+<b class="nc"><i>32</i>&nbsp;    {</b>
+<b class="nc"><i>33</i>&nbsp;        constructVector(initialCapacity,DEFEXTENSION,extMethod);</b>
+<i>34</i>&nbsp;    }
+<i>35</i>&nbsp;
+<i>36</i>&nbsp;    public MyVector(int initialCapacity, int capacityIncr, char extMethod)
+<b class="nc"><i>37</i>&nbsp;    {</b>
+<b class="nc"><i>38</i>&nbsp;        constructVector(initialCapacity,capacityIncr,extMethod); </b>
+<i>39</i>&nbsp;    }
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;    //********************** CLASS SUPPORT METHODS **********************
+<i>42</i>&nbsp;
+<i>43</i>&nbsp;    private void constructVector(int initSize,int initExtSize,char extMethod)
+<i>44</i>&nbsp;    {
+<b class="nc"><i>45</i>&nbsp;        elementData   = new Object[initSize];</b>
+<b class="nc"><i>46</i>&nbsp;        capacityOrig  = initSize;</b>
+<b class="nc"><i>47</i>&nbsp;        extensionOrig = initExtSize;</b>
+<b class="nc"><i>48</i>&nbsp;        currExtInc    = initExtSize;</b>
+<b class="nc"><i>49</i>&nbsp;        extensionMeth = extMethod;</b>
+<b class="nc"><i>50</i>&nbsp;        elementCount  = 0;</b>
+<i>51</i>&nbsp;    }
+<i>52</i>&nbsp;
+<i>53</i>&nbsp;    protected void ensureCapacity(int spaceWanted)
+<i>54</i>&nbsp;    {
+<i>55</i>&nbsp;        // If current array space GE wanted size then simply return
+<i>56</i>&nbsp;
+<b class="nc"><i>57</i>&nbsp;        if (elementData.length &gt;= spaceWanted) return;</b>
+<i>58</i>&nbsp;        
+<i>59</i>&nbsp;        // Space too small: Extend starting from current array length
+<i>60</i>&nbsp;
+<b class="nc"><i>61</i>&nbsp;        int newLength = elementData.length; </b>
+<i>62</i>&nbsp;
+<i>63</i>&nbsp;        // Extend by speficied method/algorithm till space GT space wanted
+<i>64</i>&nbsp;
+<b class="nc"><i>65</i>&nbsp;        while (newLength &lt; spaceWanted) </b>
+<b class="nc"><i>66</i>&nbsp;             switch (extensionMeth)</b>
+<i>67</i>&nbsp;             {
+<b class="nc"><i>68</i>&nbsp;                 case &#39;F&#39;: newLength  += extensionOrig;  break;</b>
+<b class="nc"><i>69</i>&nbsp;                 case &#39;D&#39;: newLength  += currExtInc;</b>
+<b class="nc"><i>70</i>&nbsp;                           currExtInc *= 2;              break;</b>
+<b class="nc"><i>71</i>&nbsp;                 case &#39;O&#39;: newLength  += capacityOrig;   break;</b>
+<b class="nc"><i>72</i>&nbsp;                 case &#39;C&#39;: newLength  *= 2;              break;</b>
+<i>73</i>&nbsp;             }
+<i>74</i>&nbsp;
+<i>75</i>&nbsp;        // Create new array, copy values into it, reassign to array  
+<i>76</i>&nbsp;
+<b class="nc"><i>77</i>&nbsp;        Object newElementData[] = new Object[newLength];</b>
+<b class="nc"><i>78</i>&nbsp;        for (int i = 0; i &lt; elementCount; i++) </b>
+<b class="nc"><i>79</i>&nbsp;            newElementData[i] = elementData[i];</b>
+<b class="nc"><i>80</i>&nbsp;        elementData = newElementData;</b>
+<i>81</i>&nbsp;    }
+<i>82</i>&nbsp;
+<i>83</i>&nbsp;    //*********************** MAINTENANCE METHODS ***********************
+<i>84</i>&nbsp;
+<i>85</i>&nbsp;    public void trimToSize()
+<i>86</i>&nbsp;    {
+<i>87</i>&nbsp;        // Create new array to hold current elements, copy into it, reset
+<i>88</i>&nbsp;
+<b class="nc"><i>89</i>&nbsp;        Object newElementData[] = new Object[elementCount];</b>
+<b class="nc"><i>90</i>&nbsp;        for (int i = 0; i &lt; elementCount; i++) </b>
+<b class="nc"><i>91</i>&nbsp;            newElementData[i] = elementData[i];</b>
+<b class="nc"><i>92</i>&nbsp;        elementData = newElementData;</b>
+<i>93</i>&nbsp;    }
+<i>94</i>&nbsp;
+<i>95</i>&nbsp;    //********************** INFORMATIONAL METHODS **********************
+<i>96</i>&nbsp;
+<i>97</i>&nbsp;    public int size()
+<i>98</i>&nbsp;    {
+<b class="nc"><i>99</i>&nbsp;        return elementCount;</b>
+<i>100</i>&nbsp;    }
+<i>101</i>&nbsp;
+<i>102</i>&nbsp;    public int capacity()
+<i>103</i>&nbsp;    {
+<b class="nc"><i>104</i>&nbsp;        return elementData.length;</b>
+<i>105</i>&nbsp;    }
+<i>106</i>&nbsp;
+<i>107</i>&nbsp;    public boolean isEmpty()
+<i>108</i>&nbsp;    {
+<b class="nc"><i>109</i>&nbsp;        return size() == 0;</b>
+<i>110</i>&nbsp;    }
+<i>111</i>&nbsp;
+<i>112</i>&nbsp;    //******************** FIND/SEARCH/MATCH METHODS ********************
+<i>113</i>&nbsp;
+<i>114</i>&nbsp;    public boolean contains(Object elem)
+<i>115</i>&nbsp;    {
+<i>116</i>&nbsp;        // Search for matching object:  true if found, false otherwise
+<i>117</i>&nbsp;
+<b class="nc"><i>118</i>&nbsp;        for (int i = 0; i &lt; elementCount; i++) </b>
+<b class="nc"><i>119</i>&nbsp;            if (elem.equals(elementData[i])) </b>
+<b class="nc"><i>120</i>&nbsp;                return true;</b>
+<b class="nc"><i>121</i>&nbsp;        return false;</b>
+<i>122</i>&nbsp;    }
+<i>123</i>&nbsp;
+<i>124</i>&nbsp;    //******************* GET/PUT (LOAD/STORE) METHODS ******************
+<i>125</i>&nbsp;
+<i>126</i>&nbsp;    public Object elementAt(int index)
+<i>127</i>&nbsp;    {
+<b class="nc"><i>128</i>&nbsp;        return elementData[index];</b>
+<i>129</i>&nbsp;    }
+<i>130</i>&nbsp;
+<i>131</i>&nbsp;    public void setElementAt(Object obj, int index)
+<i>132</i>&nbsp;    {
+<b class="nc"><i>133</i>&nbsp;        elementData[index] = obj;</b>
+<i>134</i>&nbsp;    }
+<i>135</i>&nbsp;
+<i>136</i>&nbsp;    //*********************** ADD/INSERT METHODS ************************
+<i>137</i>&nbsp;
+<i>138</i>&nbsp;    public void addElement(Object obj)
+<i>139</i>&nbsp;    {
+<i>140</i>&nbsp;        // Check/obtain enough space, then add element to end of array
+<i>141</i>&nbsp;
+<b class="nc"><i>142</i>&nbsp;        ensureCapacity(elementCount+1);</b>
+<b class="nc"><i>143</i>&nbsp;        elementData[elementCount] = obj;</b>
+<b class="nc"><i>144</i>&nbsp;        elementCount++;</b>
+<i>145</i>&nbsp;    }
+<i>146</i>&nbsp;
+<i>147</i>&nbsp;    public void insertElementAt(Object obj, int index)
+<i>148</i>&nbsp;    {
+<i>149</i>&nbsp;        // Check/obtain enough space, open hole in array, insert element
+<i>150</i>&nbsp;
+<b class="nc"><i>151</i>&nbsp;        ensureCapacity(elementCount+1);</b>
+<b class="nc"><i>152</i>&nbsp;        for (int i = elementCount; i &gt; index; i--) </b>
+<b class="nc"><i>153</i>&nbsp;            elementData[i] = elementData[i-1];</b>
+<b class="nc"><i>154</i>&nbsp;        elementData[index] = obj;</b>
+<b class="nc"><i>155</i>&nbsp;        elementCount++;</b>
+<i>156</i>&nbsp;    }
+<i>157</i>&nbsp;
+<i>158</i>&nbsp;    //********************** DELETE/REMOVE METHODS **********************
+<i>159</i>&nbsp;
+<i>160</i>&nbsp;    public boolean removeElement(Object element)
+<i>161</i>&nbsp;    {
+<i>162</i>&nbsp;        // Find first matching object from top of array and remove it
+<i>163</i>&nbsp;
+<b class="nc"><i>164</i>&nbsp;        for (int i = 0; i &lt; elementCount; i++)</b>
+<b class="nc"><i>165</i>&nbsp;            if (element.equals(elementData[i])) </b>
+<i>166</i>&nbsp;            { 
+<b class="nc"><i>167</i>&nbsp;               removeElementAt(i);   </b>
+<b class="nc"><i>168</i>&nbsp;               return true;</b>
+<i>169</i>&nbsp;            }
+<b class="nc"><i>170</i>&nbsp;        return false;</b>
+<i>171</i>&nbsp;    }
+<i>172</i>&nbsp;
+<i>173</i>&nbsp;    public void removeElementAt(int where)
+<i>174</i>&nbsp;    {
+<i>175</i>&nbsp;        // Remove one element by shifting all elements up one to close hole
+<i>176</i>&nbsp;
+<b class="nc"><i>177</i>&nbsp;        elementCount--;</b>
+<b class="nc"><i>178</i>&nbsp;        while (where &lt; elementCount)   // BETTER DONE WITH A FOR LOOP!!</b>
+<i>179</i>&nbsp;        {
+<b class="nc"><i>180</i>&nbsp;            elementData[where] = elementData[where+1];</b>
+<b class="nc"><i>181</i>&nbsp;            where++;</b>
+<i>182</i>&nbsp;        }
+<b class="nc"><i>183</i>&nbsp;        elementData[elementCount] = null; </b>
+<i>184</i>&nbsp;    }
+<i>185</i>&nbsp;
+<i>186</i>&nbsp;    public void removeAllElements()
+<i>187</i>&nbsp;    {
+<b class="nc"><i>188</i>&nbsp;        constructVector(capacityOrig, extensionOrig, extensionMeth);</b>
+<i>189</i>&nbsp;    }
+<i>190</i>&nbsp;
+<i>191</i>&nbsp;} // EndClass MyVector
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-05-07 17:27</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="LineEditor:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9d8d11c-7db9-44d5-af65-3db05067a2b9" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/LineEditor$RegressionTest0_test262.coverage" NAME="RegressionTest0.test262 Coverage Results" MODIFIED="1526642874208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Cmd_DriverTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LineEditor$csued.coverage" NAME="csued Coverage Results" MODIFIED="1525674367034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LineEditor$RegressionTest0_test15.coverage" NAME="RegressionTest0.test15 Coverage Results" MODIFIED="1526643260903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Cmd_DriverTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LineEditor$RegressionTest0.coverage" NAME="RegressionTest0 Coverage Results" MODIFIED="1526643526029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LineEditor$ParserTest.coverage" NAME="ParserTest Coverage Results" MODIFIED="1526713144709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>JUnitTesting.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LineEditor$RegressionTest.coverage" NAME="RegressionTest Coverage Results" MODIFIED="1526642679265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Cmd_DriverTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LineEditor$RegressionTest0__1_.coverage" NAME="RegressionTest0 Coverage Results" MODIFIED="1526643518609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Cmd_DriverTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LineEditor$Init_ExitTest.coverage" NAME="Init_ExitTest Coverage Results" MODIFIED="1526713103935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>JUnitTesting.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\antst\Downloads\LineEditor" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Cmd_Driver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LineEditor/Cmd_Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="630" column="19" lean-forward="true" selection-start-line="630" selection-start-column="19" selection-end-line="630" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Init_ExitTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JUnitTesting/Init_ExitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="874">
+              <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DLL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LineEditor/DLL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2438">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="File_BufferTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RandoopTest/File_BufferTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelpTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RandoopTest/HelpTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCmdTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RandoopTest/UserCmdTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Init_ExitTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/RandoopTest/Init_ExitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JUnitTesting/ParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cmd_DriverTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JUnitTesting/Cmd_DriverTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-966">
+              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+              <folding>
+                <element signature="method#cmd_HTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_HTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_TTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_TTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ETest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ETest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_NTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_NTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_NTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_BTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_BTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_BTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_WTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_WTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_CTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_CTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_LTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_LTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_LTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_STest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_STest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_STest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_DTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_DTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_DTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ATest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_FTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_FTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_FTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_FTest4#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_FTest5#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_RTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_RTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_RTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_RTest4#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_RTest5#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_RTest6#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_YTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_YTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_YTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ZTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ZTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ZTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_PTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_PTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ITest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ITest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ITest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_ITest4#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_KTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_KTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_KTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_KTest4#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_OTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_OTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_OTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_MTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_MTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_MTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+                <element signature="method#cmd_MTest4#0;class#Cmd_DriverTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Msg.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LineEditor/Msg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="95" column="25" lean-forward="false" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Krec</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Cmd_Driver.java" />
+        <option value="$PROJECT_DIR$/src/csued.java" />
+        <option value="$PROJECT_DIR$/src/JUnitTest/msgTest.java" />
+        <option value="$PROJECT_DIR$/src/JUnitTest/RegressionTest0.java" />
+        <option value="$PROJECT_DIR$/src/RegressionTest0.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/DLL.java" />
+        <option value="$PROJECT_DIR$/src/MsgTest/RegressionTest0.java" />
+        <option value="$PROJECT_DIR$/src/Cmd_DriverTest/RegressionTest.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/RegressionTest0.java" />
+        <option value="$PROJECT_DIR$/src/Cmd_DriverTest/RegressionTest0.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/Init_ExitTest.java" />
+        <option value="$PROJECT_DIR$/src/JUnitTesting/Init_ExitTest.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/Parser.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/csued.java" />
+        <option value="$PROJECT_DIR$/src/JUnitTesting/ParserTest.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/Cmd_DriverTest.java" />
+        <option value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
+        <option value="$PROJECT_DIR$/src/JUnitTesting/Cmd_DriverTest.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/Help.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/Init_Exit.java" />
+        <option value="$PROJECT_DIR$/src/LineEditor/Cmd_Driver.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/RegressionTest.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/DLLTest.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/ErrorTest0.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/File_BufferTest.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/External_FileTest.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/HelpTest.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/UserCmdTest.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/RegressionTest0.java" />
+        <option value="$PROJECT_DIR$/src/RandoopTest/Init_ExitTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LineEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineEditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LineEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LineEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="JUnitTesting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LineEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LineEditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LineEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="RandoopTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="LineEditor" />
+      <recent name="JUnitTesting" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\antst\Downloads\LineEditor\src\Init_ExitTest" />
+      <recent name="C:\Users\antst\Downloads\LineEditor\src\RandoopTest" />
+      <recent name="C:\Users\antst\Downloads\LineEditor\src\Cmd_DriverTest" />
+      <recent name="C:\Users\antst\Downloads\LineEditor\src\JUnitTest" />
+      <recent name="C:\Users\antst\Downloads\LineEditor\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Init_ExitTest">
+    <configuration name="External_FileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="RandoopTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="LineEditor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="RandoopTest" />
+      <option name="MAIN_CLASS_NAME" value="RandoopTest.External_FileTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="File_BufferTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="RandoopTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="LineEditor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="RandoopTest" />
+      <option name="MAIN_CLASS_NAME" value="RandoopTest.File_BufferTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="HelpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="RandoopTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="LineEditor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="RandoopTest" />
+      <option name="MAIN_CLASS_NAME" value="RandoopTest.HelpTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Init_ExitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="RandoopTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="LineEditor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="RandoopTest" />
+      <option name="MAIN_CLASS_NAME" value="RandoopTest.Init_ExitTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="UserCmdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LineEditor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="RandoopTest" />
+      <option name="MAIN_CLASS_NAME" value="UserCmdTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.External_FileTest (1)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.File_BufferTest (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HelpTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserCmdTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Init_ExitTest" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Init_ExitTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserCmdTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HelpTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.File_BufferTest (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.External_FileTest (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9d8d11c-7db9-44d5-af65-3db05067a2b9" name="Default" comment="" />
+      <created>1525592024774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525592024774</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="External_FileTest_(1) - 2018.05.20 at 17h 01m 44s.xml">
+      <configuration name="External_FileTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="External_FileTest_test041 - 2018.05.20 at 16h 52m 11s.xml">
+      <configuration name="External_FileTest.test041" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="External_FileTest_test041 - 2018.05.20 at 16h 55m 50s.xml">
+      <configuration name="External_FileTest.test041" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="External_FileTest_test041 - 2018.05.20 at 16h 56m 16s.xml">
+      <configuration name="External_FileTest.test041" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="File_BufferTest - 2018.05.20 at 17h 00m 31s.xml">
+      <configuration name="File_BufferTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="File_BufferTest - 2018.05.20 at 17h 01m 35s.xml">
+      <configuration name="File_BufferTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="File_BufferTest_(1) - 2018.05.20 at 17h 03m 11s.xml">
+      <configuration name="File_BufferTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HelpTest - 2018.05.20 at 17h 05m 30s.xml">
+      <configuration name="HelpTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Init_ExitTest - 2018.05.20 at 17h 14m 15s.xml">
+      <configuration name="Init_ExitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserCmdTest - 2018.05.20 at 17h 09m 29s.xml">
+      <configuration name="UserCmdTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3026316" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6847599" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15989584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2774123" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LineEditor/Parser.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="24" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/DLL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Cmd_Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/csued.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/UserCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4186">
+          <caret line="182" column="25" lean-forward="false" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/DLL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Cmd_Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14950">
+          <caret line="663" column="15" lean-forward="false" selection-start-line="663" selection-start-column="15" selection-end-line="663" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/File_Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="72" column="15" lean-forward="false" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/DLL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/MyVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/PQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/UserCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/csued.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnitTest/msgTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/PQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/MyVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cmd_DriverTest/RegressionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MsgTest/RegressionTest0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cmd_DriverTest/RegressionTest0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/UserCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="226" column="43" lean-forward="false" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
+          <folding>
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#5951#6086#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+            <element signature="e#6647#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37099">
+          <caret line="1752" column="15" lean-forward="false" selection-start-line="1752" selection-start-column="15" selection-end-line="1752" selection-end-column="15" />
+          <folding>
+            <element signature="e#66457#66458#0" expanded="false" />
+            <element signature="e#66495#66496#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="78" lean-forward="true" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/File_Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding>
+            <element signature="e#2006#2007#0" expanded="false" />
+            <element signature="e#2035#2036#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/csued.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Init_Exit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnitTesting/Cmd_DriverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-966">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding>
+            <element signature="method#cmd_HTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_HTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_TTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_TTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ETest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ETest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_NTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_NTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_NTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_BTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_BTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_BTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_WTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_WTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_CTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_CTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_LTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_LTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_LTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_STest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_STest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_STest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_DTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_DTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_DTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ATest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_FTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_FTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_FTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_FTest4#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_FTest5#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_RTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_RTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_RTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_RTest4#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_RTest5#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_RTest6#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_YTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_YTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_YTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ZTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ZTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ZTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_PTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_PTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ITest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ITest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ITest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_ITest4#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_KTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_KTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_KTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_KTest4#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_OTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_OTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_OTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_MTest1#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_MTest2#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_MTest3#0;class#Cmd_DriverTest#0" expanded="false" />
+            <element signature="method#cmd_MTest4#0;class#Cmd_DriverTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnitTesting/Init_ExitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnitTesting/ParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Cmd_Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="630" column="19" lean-forward="true" selection-start-line="630" selection-start-column="19" selection-end-line="630" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/Msg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="95" column="25" lean-forward="false" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/DLLTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/DLLTest0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/ErrorTest0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="81" column="72" lean-forward="false" selection-start-line="81" selection-start-column="72" selection-end-line="81" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/DLL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2438">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/External_FileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="521" column="71" lean-forward="false" selection-start-line="521" selection-start-column="71" selection-end-line="521" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineEditor/External_File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-844">
+          <caret line="62" column="19" lean-forward="false" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+          <folding>
+            <element signature="e#2642#2643#0" expanded="false" />
+            <element signature="e#2672#2673#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/File_BufferTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/HelpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/PQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/UserCmdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandoopTest/Init_ExitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>LineEditor:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LineEditor</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

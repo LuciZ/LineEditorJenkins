@@ -1,0 +1,166 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Init_Exit</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Init_Exit (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Init_Exit</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    81.5%
+  </span>
+  <span class="absValue">
+    (22/ 27)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;import java.io.*;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;public class Init_Exit
+<i>4</i>&nbsp;/****************************************************************************
+<i>5</i>&nbsp;*  AUTH:  Truly, Yours                    DATE:  Nov.  1999                 *
+<i>6</i>&nbsp;*  DEPT:  Computer Science, CS-200        ORG.:  Colorado State University  *
+<i>7</i>&nbsp;*****************************************************************************
+<i>8</i>&nbsp;*                                                                           *
+<i>9</i>&nbsp;*  FILE:  Init_Exit.java                                                    *
+<i>10</i>&nbsp;*                                                                           *
+<i>11</i>&nbsp;*  DESC:  Contains the member functions for the Init_Exit Class.            *
+<i>12</i>&nbsp;*                                                                           *
+<i>13</i>&nbsp;****************************************************************************/
+<i>14</i>&nbsp;{
+<i>15</i>&nbsp;   String hold_file_name;
+<b class="fc"><i>16</i>&nbsp;   External_File editFile = new External_File();</b>
+<b class="fc"><i>17</i>&nbsp;   boolean Fatal_Error = false, open_failed;</b>
+<i>18</i>&nbsp;
+<i>19</i>&nbsp;   public Init_Exit(String args[], File_Buffer FILE) throws IOException
+<b class="fc"><i>20</i>&nbsp;   {</b>
+<b class="fc"><i>21</i>&nbsp;       int line_count=0;</b>
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;       // Check for incorrect number of arguments and handle any errors.
+<i>24</i>&nbsp;
+<b class="fc"><i>25</i>&nbsp;       if(args.length != 1) </b>
+<i>26</i>&nbsp;       {
+<b class="nc"><i>27</i>&nbsp;          Fatal_Error=true;</b>
+<b class="nc"><i>28</i>&nbsp;          Msg.ERROR(0);</b>
+<b class="nc"><i>29</i>&nbsp;          return;</b>
+<i>30</i>&nbsp;       }
+<i>31</i>&nbsp;
+<i>32</i>&nbsp;       // No errors, so save the user edit file name from invoke arg list
+<i>33</i>&nbsp;
+<b class="fc"><i>34</i>&nbsp;       hold_file_name = args[0];</b>
+<i>35</i>&nbsp;
+<i>36</i>&nbsp;       // Open on user edit file name and read the file if it exists
+<i>37</i>&nbsp;
+<b class="fc"><i>38</i>&nbsp;       open_failed = editFile.openR(hold_file_name);</b>
+<b class="fc"><i>39</i>&nbsp;       if(!open_failed) </b>
+<i>40</i>&nbsp;       {
+<b class="fc"><i>41</i>&nbsp;           while(!editFile.havehitEOF()) </b>
+<b class="fc"><i>42</i>&nbsp;               FILE.AddLine(line_count++,editFile.getLine());</b>
+<b class="fc"><i>43</i>&nbsp;           editFile.close();</b>
+<i>44</i>&nbsp;       }
+<i>45</i>&nbsp;       else 
+<b class="nc"><i>46</i>&nbsp;           Msg.ERROR(1);</b>
+<i>47</i>&nbsp;
+<i>48</i>&nbsp;       // Set CLN regardless of above opening
+<i>49</i>&nbsp;
+<b class="fc"><i>50</i>&nbsp;       FILE.SetCLN( Math.min(FILE.NumLins(),1) );</b>
+<b class="fc"><i>51</i>&nbsp;   }</b>
+<i>52</i>&nbsp;
+<i>53</i>&nbsp;
+<i>54</i>&nbsp;   public boolean Start_Failed() 
+<i>55</i>&nbsp;   {
+<b class="fc"><i>56</i>&nbsp;      return Fatal_Error;</b>
+<i>57</i>&nbsp;   }
+<i>58</i>&nbsp;
+<i>59</i>&nbsp;
+<i>60</i>&nbsp;   public void Do_Update(File_Buffer FILE) throws IOException
+<i>61</i>&nbsp;   {
+<i>62</i>&nbsp;       int i,Nlines;
+<i>63</i>&nbsp;
+<i>64</i>&nbsp;       // Check to see if file update wanted -- if not then skip rewriiting file.
+<i>65</i>&nbsp;
+<b class="fc"><i>66</i>&nbsp;       if(FILE.getUpdateFlag()) </b>
+<i>67</i>&nbsp;       {
+<i>68</i>&nbsp;          // open the user edit file and write the entire buffer to the file
+<i>69</i>&nbsp;
+<b class="fc"><i>70</i>&nbsp;          open_failed = editFile.openW(hold_file_name);</b>
+<b class="fc"><i>71</i>&nbsp;          Nlines=FILE.NumLins();</b>
+<i>72</i>&nbsp;
+<b class="fc"><i>73</i>&nbsp;          if(Nlines == 0)                    // File nulled if NO Buff lines!</b>
+<b class="nc"><i>74</i>&nbsp;             Msg.ERROR(2);</b>
+<i>75</i>&nbsp;          else                               // Rewrite file with all buff lines.
+<b class="fc"><i>76</i>&nbsp;             for(i=1; i&lt;Nlines; i++)</b>
+<b class="fc"><i>77</i>&nbsp;                 editFile.writeln(FILE.GetLine(i));</b>
+<i>78</i>&nbsp;
+<b class="fc"><i>79</i>&nbsp;          editFile.close();</b>
+<i>80</i>&nbsp;       }
+<b class="fc"><i>81</i>&nbsp;   }</b>
+<i>82</i>&nbsp;
+<i>83</i>&nbsp;} // EndClass Init_Exit
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-05-07 17:27</div>
+</div>
+</body>
+</html>
